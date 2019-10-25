@@ -179,6 +179,7 @@ RETURN
 ; ######################################### MAIN FUNCTIONS ##########################################
 ; Check UP Geral
 F3::
+Gosub,  root_p3
 Gosub,	chk_routes_no_root
 SLEEP,    500
 SENDInput,     net atm{ENTER}phy{ENTER}his{ENTER}exi{ENTER}exi{ENTER}
@@ -201,6 +202,7 @@ RETURN
 
 ; Enable traces (ppp + cell) + Disable feature wrr-backup-wan (enable 3G) + Check 3G Status
 F7::
+Gosub,  root_p3
 Gosub, en_traces
 Gosub, dis_fe_wr
 Gosub, chk_3g_status
@@ -208,6 +210,7 @@ RETURN
 
 ; Disable traces (ppp + cell) + enable feature wrr-backup-wan (disable 3G)
 +F7::
+Gosub,  root_p3
 Gosub, dis_traces
 Gosub, en_fe_wr
 RETURN
