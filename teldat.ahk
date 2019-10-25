@@ -183,7 +183,7 @@ Gosub,	chk_routes_no_root
 SLEEP,    500
 SENDInput,     net atm{ENTER}phy{ENTER}his{ENTER}exi{ENTER}exi{ENTER}
 SLEEP,    500
-SENDInput,	device atm{ENTER}yes{ENTER}no{ENTER}no{ENTER}
+SENDInput,	device atm{ENTER}yes{ENTER}yes{ENTER}no{ENTER}
 SLEEP,    500
 Gosub,	chk_port_status_no_root
 SLEEP,    500
