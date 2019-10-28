@@ -251,11 +251,9 @@ F3::
 Gosub,		root_p3
 Gosub,		chk_routes_no_root
 SLEEP,		500
-SENDInput,	chk_adsl_history_no_root
-SENDInput,	exi{ENTER}
-SENDInput,	exi{ENTER}
+Gosub,		chk_adsl_history_no_root
 SLEEP,		500
-SENDInput,	chk_adsl_stats_no_root
+Gosub,		chk_adsl_stats_no_root
 SLEEP,		500
 Gosub,		chk_port_status_no_root
 SLEEP,		500
@@ -264,9 +262,10 @@ SLEEP,		500
 Gosub,		chk_3g_status_no_root
 SENDInput,	exit{ENTER}
 SLEEP,		500
-SENDInput,	chk_bgp_sum_no_root
+Gosub,		chk_bgp_sum_no_root
 SLEEP,		500
 SENDInput,	exit{ENTER}
+SLEEP,		500
 SENDInput,	last{ENTER}
 RETURN
 
