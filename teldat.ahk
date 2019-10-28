@@ -277,7 +277,6 @@ RETURN
 
 ;;;;;;;;;;;;;;;;; Enable traces (ppp + cell) + Disable feature wrr-backup-wan (enable 3G) + Check 3G Status
 F8::
-Gosub,	root_p3
 Gosub,	en_traces
 Gosub,	dis_fe_wr
 Gosub,	chk_3g_status
@@ -285,7 +284,6 @@ RETURN
 
 ;;;;;;;;;;;;;;;;; Disable traces (ppp + cell) + enable feature wrr-backup-wan (disable 3G)
 !F8::
-Gosub,	root_p3
 Gosub,	dis_traces
 Gosub,	en_fe_wr
 RETURN
