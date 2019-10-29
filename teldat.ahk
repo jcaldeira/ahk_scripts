@@ -253,7 +253,7 @@ RETURN
 ;;;;;;;;;;;;;;;;; Check UP Geral
 F3::
 Gosub,		root_p3
-SENDInput,	conf
+SENDInput,	conf{ENTER}
 Gosub,		chk_routes_no_root
 SLEEP,		500
 Gosub,		chk_adsl_history_no_root
