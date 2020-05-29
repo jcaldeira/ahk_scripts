@@ -1,4 +1,4 @@
-;;;;;;;;;;;;;;;;; Symbols and descriptions
+﻿;;;;;;;;;;;;;;;;; Symbols and descriptions
 ; ^ - Ctrl
 ; # - Windows
 ; + - Shift
