@@ -11,7 +11,7 @@
 
 ;;;;;;;;;;;;;;;;; Password Linux - Salto
 F1::
-SendRaw,*!f$GV5TN9yT{ENTER}
+SendRaw,*!f$GV5TN9yT
 SendInput, {ENTER}
 Return
 
