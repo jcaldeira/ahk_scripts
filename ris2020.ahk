@@ -7,7 +7,7 @@
 
 
 
-#IfWinActive ahk_exe mRemoteNG.exe
+#IfWinActive ahk_exe PuTTYNG.exe
 
 ;;;;;;;;;;;;;;;;; Password Linux - Salto
 F1::
