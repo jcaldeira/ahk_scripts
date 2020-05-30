@@ -1,21 +1,23 @@
 ﻿pwdLinux := "caldeira" ; Password Linux - Salto
 pwdTACASCPE := "caldeira123" ; Password TACACS CPEs
 
+; DetectHiddenWindows, On
+; WinShow, PuTTYNG
 
-WinShow, ahk_class PuTTYNG
-#IfWinActive ahk_class PuTTYNG
-
+; #IfWinActive ahk_exe PuTTYNG.exe
 
 ;;;;;;;;;;;;;;;;; Password Linux - Salto
 F1::
-ControlSend,, {Blind}{Text}%pwdLinux%, ahk_class PuTTYNG
-ControlSend,, {Enter}, ahk_class PuTTYNG
+WinGetTitle, windowtitle
+; MsgBox, %windowtitle%
+ControlSend,, {Blind}{Text}%pwdLinux%,  - PuTTY
+ControlSend,, {Enter},  - PuTTY
 Return
 
 ;;;;;;;;;;;;;;;;; Password TACACS CPEs
 F2::
-ControlSend,, {Blind}{Text}%pwdTACASCPE%, ahk_class PuTTYNG
-ControlSend,, {Enter}, ahk_class PuTTYNG
+ControlSend,, {Blind}{Text}%pwdTACASCPE%, ahk_exe PuTTYNG.exe
+ControlSend,, {Enter}, ahk_exe PuTTYNG.exe
 Return
 
 
