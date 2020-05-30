@@ -1,43 +1,37 @@
-﻿;;;;;;;;;;;;;;;;; Symbols and descriptions
-; ^ - Ctrl
-; # - Windows
-; + - Shift
-; ! - Alt
-; & - An ampersand may be used between any two keys or mouse buttons to combine them into a custom hotkey.
+﻿FormatTime, currenttime, A_now, d/MM/yyyy HH:mm		; Datetime Stamp - Inserts time and date (Ex. 29/05/2020 14:09)
 
-;;;;;;;;;;;;;;;;; Datetime Stamp
-FormatTime, currenttime, A_now, d/MM/yyyy HH:mm		; Inserts time and date (Ex. 29/05/2020 14:09)
+pwdLinux := "*!f$GV5TN9yT" ; Password Linux - Salto
+pwdTACASCPE := "CLD&caldeira0" ; Password TACACS CPEs
+
+defaultCC := " - JCaldeira - Migração da CC com sucesso. Teste realizados com o técnico <<TECNICO>> e com <<RESP_LOCAL>> (responsável no local). <<FOTOS_FICHA>>"
+defaultWU := " - JCaldeira - WU instalado com sucesso. Testado pelo técnico <<TECNICO>>. <<SURVEY>>"
 
 
 
-#IfWinActive ahk_exe PuTTYNG.exe
+#IfWinActive ahk_class PuTTYNG
+
 
 ;;;;;;;;;;;;;;;;; Password Linux - Salto
 F1::
-SendRaw,*!f$GV5TN9yT
-SendInput, {ENTER}
+ControlSend,, {Blind}{Text}%pwdLinux%, ahk_class PuTTYNG
+ControlSend,, {Enter}, ahk_class PuTTYNG
 Return
-
 
 ;;;;;;;;;;;;;;;;; Password TACACS CPEs
 F2::
-SendRaw,CLD&caldeira0
-SendInput, {ENTER}
+ControlSend,, {Blind}{Text}%pwdTACASCPE%, ahk_class PuTTYNG
+ControlSend,, {Enter}, ahk_class PuTTYNG
 Return
 
 
-
-
-#IfWinActive ahk_exe notepad++.exe
+#IfWinActive ahk_class Notepad++
 
 ;;;;;;;;;;;;;;;;; Nota CC
 F2::
-SendInput, %currenttime% - JCaldeira - Migração da CC com sucesso. Teste realizados com o técnico <<TECNICO>> e com <<RESP_LOCAL>> (responsável no local). <<FOTOS_FICHA>>
-Return
-
-
+ControlSend, Scintilla1, {Blind}{Text}%currenttime%%defaultCC%`n, ahk_class Notepad++
+return
 
 ;;;;;;;;;;;;;;;;; Nota WU
 F3::
-SendInput, %currenttime% - JCaldeira - WU instalado com sucesso. Testado pelo técnico <<TECNICO>>. <<SURVEY>>
+ControlSend, Scintilla1, {Blind}{Text}%currenttime%%defaultWU%`n, ahk_class Notepad++
 Return
