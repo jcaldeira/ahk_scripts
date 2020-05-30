@@ -1,6 +1,8 @@
 ﻿pwdLinux := "caldeira" ; Password Linux - Salto
 pwdTACASCPE := "caldeira123" ; Password TACACS CPEs
 
+
+WinShow, ahk_class PuTTYNG
 #IfWinActive ahk_class PuTTYNG
 
 
