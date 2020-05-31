@@ -337,3 +337,27 @@ Gosub, dis_traces
 Gosub, en_fe_wr
 Return
 
+; ----------------------------------
+
+;;;;;;;;;;;;;;;;; Check UP Geral Cisco
+!F3::
+SendInput, {Blind}{Text}term len 0`n
+Sleep, 500
+SendInput, {Blind}{Text}sh ver`n`n`n`n`n
+Sleep, 500
+SendInput, {Blind}{Text}sh ip int b`n`n`n`n`n
+Sleep, 500
+SendInput, {Blind}{Text}sh mac addr int gi0/1/0`n`n`n`n`n
+Sleep, 500
+SendInput, {Blind}{Text}sh ip route `n`n`n`n`n
+Sleep, 500
+SendInput, {Blind}{Text}sh ip bgp sum `n`n`n`n`n
+Sleep, 500
+SendInput, {Blind}{Text}sh ip dhcp binding`n`n`n`n`n
+Sleep, 500
+SendInput, {Blind}{Text}sh cel 0/2/0 radio `n`n`n`n`n
+Sleep, 500
+SendInput, {Blind}{Text}sh cel 0/2/0 profile `n`n`n`n`n
+Sleep, 500
+SendInput, {Blind}{Text}sh log`n`n`n`n`n
+Return
