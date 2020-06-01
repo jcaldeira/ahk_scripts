@@ -39,11 +39,11 @@ Return
 #IfWinActive ahk_class Notepad++
 
 ;;;;;;;;;;;;;;;;; Nota CC
-F2::
+F1::
 ControlSend, Scintilla1, {Blind}{Text}%currenttime%%defaultCC%`n, ahk_class Notepad++
 return
 
 ;;;;;;;;;;;;;;;;; Nota WU
-F3::
+F2::
 ControlSend, Scintilla1, {Blind}{Text}%currenttime%%defaultWU%`n, ahk_class Notepad++
 Return
