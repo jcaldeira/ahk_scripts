@@ -1,4 +1,4 @@
-﻿FormatTime, currenttime, A_now, d/MM/yyyy HH:mm		; Datetime Stamp - Inserts time and date (Ex. 29/05/2020 14:09)
+﻿FormatTime, currenttime, A_now, dd/MM/yyyy HH:mm		; Datetime Stamp - Inserts time and date (Ex. 29/05/2020 14:09)
 
 pwdLinux := "*!f$GV5TN9yT" ; Password Linux - Salto
 pwdTACASCPE := "CLD&caldeira0" ; Password TACACS CPEs
