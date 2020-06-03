@@ -1,5 +1,4 @@
-﻿
-pwdLinux := "*!f$GV5TN9yT" ; Password Linux - Salto
+﻿pwdLinux := "*!f$GV5TN9yT" ; Password Linux - Salto
 pwdTACASCPE := "CLD&caldeira0" ; Password TACACS CPEs
 
 defaultCC := " - JCaldeira - Migração da CC com sucesso. Teste realizados com o técnico <<TECNICO>> e com <<RESP_LOCAL>> (responsável no local). <<EQUIPAMENTOS_NOS_ENTREGUES>>. <<FOTOS_FICHA>>"
@@ -38,7 +37,7 @@ F4::
 SendInput, {Blind}{Text}ping 100.64.101.1 source%A_Space%
 SendInput, ^+v
 SendInput, {Blind}{Text}%A_Space%repeat 1000 size 1000`n
-Sleep 10000
+Sleep 20000
 SendInput, {Blind}{Text}ping 10.0.19.254 source%A_Space%
 SendInput, ^+v
 SendInput, {Blind}{Text}%A_Space%repeat 1000 size 1000`n
