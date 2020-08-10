@@ -1,4 +1,4 @@
-﻿pwdLinux := "*!f$GV5TN9yT" ; Password Linux - Salto
+﻿pwdLinux := "Y@!Xz65AomsK" ; Password Linux - Salto
 pwdTACASCPE := "CLD&caldeira0" ; Password TACACS CPEs
 
 defaultCC := " - JCaldeira - Migração da CC com sucesso. Teste realizados com o técnico <<TECNICO>> e com <<RESP_LOCAL>> (responsável no local). <<EQUIPAMENTOS_NOS_ENTREGUES>>. <<FOTOS_FICHA>>"
@@ -22,13 +22,13 @@ Return
 ;;;;;;;;;;;;;;;;; Comandos obrigatórios no ínicio de cada sessão
 F3::
 SendInput, {Blind}{Text}term len 0`n
-Sleep, 500
+;Sleep, 500
 SendInput, {Blind}{Text}term mon`n
-Sleep, 500
+;Sleep, 500
 SendInput, {Blind}{Text}sh log`n
-Sleep, 500
+;Sleep, 500
 SendInput, {Blind}{Text}sh ip int b`n
-Sleep, 500
+;Sleep, 500
 SendInput, {Blind}{Text}sh bgp sum`n
 Return
 
