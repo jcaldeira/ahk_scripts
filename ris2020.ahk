@@ -1,5 +1,5 @@
 ﻿pwdLinux := "Y@!Xz65AomsK" ; Password Linux - Salto
-pwdTACASCPE := "CLD%caldeira0" ; Password TACACS CPEs
+pwdTACASCPE := "CLD@caldeira0" ; Password TACACS CPEs
 
 defaultCC := " - JCaldeira - Migração da CC com sucesso. Teste realizados com o técnico <<TECNICO>> e com <<RESP_LOCAL>> (responsável no local). <<EQUIPAMENTOS_NOS_ENTREGUES>>. <<FOTOS_FICHA>>"
 defaultWU := " - JCaldeira - WU instalado com sucesso. Testado pelo técnico <<TECNICO>>. <<SURVEY>>"
@@ -16,7 +16,7 @@ Return
 
 ;;;;;;;;;;;;;;;;; Password TACACS CPEs
 F2::
-SendInput, {Blind}{Text}%pwdTACASCPEs%`n
+SendInput, {Blind}{Text}%pwdTACASCPE%`n
 Return
 
 ;;;;;;;;;;;;;;;;; Comandos obrigatórios no ínicio de cada sessão
