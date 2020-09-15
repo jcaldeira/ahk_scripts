@@ -21,7 +21,7 @@ Return
 
 ;;;;;;;;;;;;;;;;; Comandos obrigatórios no ínicio de cada sessão
 F3::
-SendInput, {Blind}{Text}term len 0`n
+;SendInput, {Blind}{Text}term len 0`n
 ;Sleep, 500
 SendInput, {Blind}{Text}term mon`n
 ;Sleep, 500
