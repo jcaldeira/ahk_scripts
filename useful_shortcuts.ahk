@@ -1,4 +1,6 @@
-﻿;#IfWinActive ahk_class Notepad++
+﻿pwdAlticeDominio := "3nTDT#32N!Nk" ; Password Altice - Domínio
+
+;#IfWinActive ahk_class Notepad++
 
 ;;;;;;;;;;;;;;;;; Datetime Stamp
 ;F5::
@@ -12,4 +14,13 @@
 F5::
 FormatTime, currenttime, A_now, HH:mm dd/MM/yyyy	; Inserts time and date (Ex. 14:09 29/05/2020)
 SendInput, {Blind}{Text}%currenttime% -%A_Space%
+Return
+
+
+
+#IfWinActive ahk_exe TrGUI.exe
+
+;;;;;;;;;;;;;;;;; Password Altice - Domínio
+F1::
+SendInput, {Blind}{Text}%pwdAlticeDominio%`n
 Return
