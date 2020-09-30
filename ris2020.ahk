@@ -1,11 +1,17 @@
 ﻿pwdLinux := "Y@!Xz65AomsK" ; Password Linux - Salto
 pwdTACASCPE := "CLD@caldeira0" ; Password TACACS CPEs
+pwdCASPMS := "ET16yGc4KkpnKMi" ; Password CA - SPMS
 
 defaultCC := " - JCaldeira - Migração da CC com sucesso. Teste realizados com o técnico <<TECNICO>> e com <<RESP_LOCAL>> (responsável no local). <<EQUIPAMENTOS_NOS_ENTREGUES>>. <<FOTOS_FICHA>>"
 defaultWU := " - JCaldeira - WU instalado com sucesso. Testado pelo técnico <<TECNICO>>. <<SURVEY>>"
 
 
+#IfWinActive ahk_class Chrome_WidgetWin_1
 
+;;;;;;;;;;;;;;;;; Password Password CA - SPMS
+F1::
+SendInput, {Blind}{Text}%pwdCASPMS%`n
+Return
 
 #IfWinActive ahk_class PuTTYNG
 
