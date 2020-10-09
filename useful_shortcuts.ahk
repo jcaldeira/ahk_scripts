@@ -1,6 +1,6 @@
 ﻿pwdAlticeDominio := "3nTDT#32N!Nk" ; Password Altice - Domínio
 
-;#IfWinActive ahk_class Notepad++
+#IfWinActive ahk_class Notepad++
 
 ;;;;;;;;;;;;;;;;; Datetime Stamp
 ;F5::
