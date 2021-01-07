@@ -1,6 +1,6 @@
-﻿pwdLinux := "Y@!Xz65AomsK" ; Password Linux - Salto
+﻿pwdLinux := "4bjV$yPJq9G%" ; Password Linux - Salto
 pwdTACASCPE := "CLD@caldeira0" ; Password TACACS CPEs
-pwdCASPMS := "ET16yGc4KkpnKMi" ; Password CA - SPMS
+pwdCASPMS := "Tr!pl3x%48" ; Password CA - SPMS
 
 defaultCC := " - JCaldeira - Migração da CC com sucesso. Teste realizados com o técnico <<TECNICO>> e com <<RESP_LOCAL>> (responsável no local). <<EQUIPAMENTOS_NOS_ENTREGUES>>. <<FOTOS_FICHA>>"
 defaultWU := " - JCaldeira - WU instalado com sucesso. Testado pelo técnico <<TECNICO>>. <<SURVEY>>"
