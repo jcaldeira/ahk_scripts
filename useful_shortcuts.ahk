@@ -1,4 +1,5 @@
 ﻿pwdAlticeDominio := "w580n1!DLmZ2" ; Password Altice - Domínio
+pwdNetQ := "3ARACq9%oT%P" ; Password NetQ
 
 #IfWinActive ahk_class Notepad++
 
@@ -21,6 +22,14 @@ F12::
 SendInput, {Blind}{Text}`n
 SendInput, {▬ 52}
 SendInput, {Blind}{Text}`n
+Return
+
+
+#IfWinActive ahk_class Chrome_WidgetWin_1
+
+;;;;;;;;;;;;;;;;; Password NetQ
+F2::
+SendInput, {Blind}{Text}%pwdNetQ%`n
 Return
 
 
