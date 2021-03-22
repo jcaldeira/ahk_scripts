@@ -1,10 +1,10 @@
-﻿pwdLinux := "4bjV$yPJq9G%" ; Password Linux - Salto
+﻿pwdLinux := "VQCt^@1P2NaR" ; Password Linux - Salto
 pwdTACASCPE := "CLD@caldeira0" ; Password TACACS CPEs
 pwdCASPMS := "Tr!pl3x%48" ; Password CA - SPMS
 
 defaultCC := " - JCaldeira - Migração da CC com sucesso. Teste realizados com o técnico <<TECNICO>> e com <<RESP_LOCAL>> (responsável no local). <<EQUIPAMENTOS_NOS_ENTREGUES>>. <<FOTOS_FICHA>>"
 defaultWU := " - JCaldeira - WU instalado com sucesso. Testado pelo técnico <<TECNICO>>. <<SURVEY>>"
-
+defaultAvaria := "Contacto por parte do OMG1 para confirmar operacionalidade dos circuitos."
 
 #IfWinActive ahk_class Chrome_WidgetWin_1
 
@@ -65,5 +65,7 @@ FormatTime, currenttime, A_now, dd/MM/yyyy HH:mm		; Datetime Stamp - Inserts tim
 ControlSend, Scintilla1, {Blind}{Text}%currenttime%%defaultWU%`n, ahk_class Notepad++
 Return
 
-
-
+;;;;;;;;;;;;;;;;; Nota WU
+F3::
+ControlSend, Scintilla1, {Blind}{Text}%defaultAvaria%`n, ahk_class Notepad++
+Return
