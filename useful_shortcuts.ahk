@@ -1,4 +1,4 @@
-﻿pwdAlticeDominio := "D8o8f^9XCBUi" ; Password Altice - Domínio
+﻿pwdAlticeDominio := "R0@&*&n57s" ; Password Altice - Domínio
 pwdNetQ := "3ARACq9%oT%P" ; Password NetQ
 
 #IfWinActive ahk_class Notepad++

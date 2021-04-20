@@ -2,9 +2,9 @@
 pwdTACASCPE := "CLD@caldeira0" ; Password TACACS CPEs
 pwdCASPMS := "Tr!pl3x%48" ; Password CA - SPMS
 
-defaultCC := " - JCaldeira - Migração da CC com sucesso. Teste realizados com o técnico <<TECNICO>> e com <<RESP_LOCAL>> (responsável no local). <<EQUIPAMENTOS_NOS_ENTREGUES>>. <<FOTOS_FICHA>>"
-defaultWU := " - JCaldeira - WU instalado com sucesso. Testado pelo técnico <<TECNICO>>. <<SURVEY>>"
+defaultCC := " - jcaldeira - Instalação da CC com sucesso. Teste realizados com o técnico _TECNICO_ e com _RESP_LOCAL_ (responsável no local)."
 defaultAvaria := "Contacto por parte do OMG1 para confirmar operacionalidade dos circuitos."
+
 
 #IfWinActive ahk_class Chrome_WidgetWin_1
 
@@ -12,6 +12,7 @@ defaultAvaria := "Contacto por parte do OMG1 para confirmar operacionalidade dos
 F1::
 SendInput, {Blind}{Text}%pwdCASPMS%`n
 Return
+
 
 #IfWinActive ahk_class PuTTYNG
 
@@ -50,22 +51,17 @@ SendInput, {Blind}{Text}%A_Space%repeat 1000 size 1000`n
 Return
 
 
-
-#IfWinActive ahk_class Notepad++
+#IfWinActive João Pedro Cordeiro @ Portugal Telecom
 
 ;;;;;;;;;;;;;;;;; Nota CC
 F1::
 FormatTime, currenttime, A_now, dd/MM/yyyy HH:mm		; Datetime Stamp - Inserts time and date (Ex. 29/05/2020 14:09) - Tem de estar dentro do atalho pq se não não atualiza
-ControlSend, Scintilla1, {Blind}{Text}%currenttime%%defaultCC%`n, ahk_class Notepad++
+; ControlSend, Scintilla1, {Blind}{Text}%currenttime%%defaultCC%`n, ahk_class Notepad++
+SendInput, {Blind}{Text}%currenttime%%defaultCC%`n
 return
 
-;;;;;;;;;;;;;;;;; Nota WU
-F2::
-FormatTime, currenttime, A_now, dd/MM/yyyy HH:mm		; Datetime Stamp - Inserts time and date (Ex. 29/05/2020 14:09) - Tem de estar dentro do atalho pq se não não atualiza
-ControlSend, Scintilla1, {Blind}{Text}%currenttime%%defaultWU%`n, ahk_class Notepad++
-Return
-
-;;;;;;;;;;;;;;;;; Nota WU
+;;;;;;;;;;;;;;;;; Nota Avaria
 F3::
-ControlSend, Scintilla1, {Blind}{Text}%defaultAvaria%`n, ahk_class Notepad++
+; ControlSend, Scintilla1, {Blind}{Text}%defaultAvaria%`n, ahk_class Notepad++
+SendInput, {Blind}{Text}%defaultAvaria%`n
 Return
