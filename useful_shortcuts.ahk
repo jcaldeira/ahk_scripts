@@ -1,7 +1,7 @@
 ﻿pwdAlticeDominio := "R0@&*&n57s" ; Password Altice - Domínio
 pwdNetQ := "3ARACq9%oT%P" ; Password NetQ
 
-#IfWinActive ahk_class Notepad++
+#IfWinActive João Pedro Cordeiro @ Portugal Telecom
 
 ;;;;;;;;;;;;;;;;; Datetime Stamp
 ;F5::
