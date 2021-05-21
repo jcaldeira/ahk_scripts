@@ -20,12 +20,13 @@ Return
 ;;;;;;;;;;;;;;;;; Separator '-'
 F12::
 SendInput, {Blind}{Text}`n
+Sleep 500
 SendInput, {▬ 52}
 SendInput, {Blind}{Text}`n
 Return
 
 
-#IfWinActive ahk_class Chrome_WidgetWin_1
+#IfWinActive ahk_exe chrome.exe
 
 ;;;;;;;;;;;;;;;;; Password NetQ
 F2::
