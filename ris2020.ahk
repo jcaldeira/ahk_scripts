@@ -73,6 +73,8 @@ Return
 F9::
 SendInput, {Blind}{Text}conf t`n
 SendInput, {Blind}{Text}crypto key generate rsa general-keys modulus 2048`n
+SendInput, {Blind}{Text}line vty 0 15`n
+SendInput, {Blind}{Text}transport input ssh`n
 SendInput, {Blind}{Text}end`n
 Return
 
